@@ -21,14 +21,6 @@ function littleHorribleAlert() {
 var f1 = function (i) {
   return i * i;
 };
-// as f1 just don't specify the return type here
-var f2 = function (i) {
-  return i * i;
-};
-
-var f3 = (i) => {
-  return i * i;
-};
 
 //change f4 to accept a string or a number as a parameter
 function f4(i) {
@@ -60,49 +52,6 @@ class Point {
 class PointPerson {
   constructor(name) {
     this.name = name;
-  }
-}
-
-// Inheritance
-// Make `Point3D` inherit from `Point`
-// Don't forget to call the parent constructor
-class Point3D {
-  constructor(x, y, z = 0) {
-    this.z = z;
-  }
-  dist() {
-    var d = super.dist();
-    return Math.sqrt(d * d + this.z * this.z);
-  }
-}
-
-// Make `Tuple` Generic that it accepts to generic types as arguments
-
-class Tuple {
-  constructor(item1, item2) {
-    this.item1 = item1;
-    this.item2 = item2;
-  }
-}
-
-// create a generic interface called Pair that accepts one generic type for two properties named item1 and item2
-
-// create a function that will take a pair with a generic argument and return a `Tuple`
-function pairToTuple(pair) {
-  return new Tuple(pair.item1, pair.item2);
-}
-
-var tuple = pairToTuple({ item1: "hello", item2: "world" });
-
-// annotate `make`, `model`, and `year` to be not mutable (read only) outside the constructor
-class Car {
-  make;
-  model;
-  year = 2018;
-
-  constructor() {
-    this.make = "Unknown Make";
-    this.model = "Unknown Model";
   }
 }
 

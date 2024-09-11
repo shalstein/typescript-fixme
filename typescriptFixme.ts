@@ -6,7 +6,7 @@ var username: string = "Anders";
 // annotate the type as when it's not known
 let unknownTypeVariable: unknown;
 
-// annotate this array
+//annotate this array
 var list: number[] = [1, 2, 3];
 
 // annotate the return type of this function
@@ -18,7 +18,7 @@ var f1 = function (i: number): number {
   return i * i;
 };
 
-// change f2 to accept a string or a number as a parameter
+//change f2 to accept a string or a number as a parameter
 function f2(i: string | number): void {
   console.log("The value was " + i);
 }
@@ -38,7 +38,7 @@ var mySearch: (src: string, sub: string) => boolean = function (src, sub) {
   return src.search(sub) != -1;
 };
 
-// annotate the constructor arguments and properties
+//annotate the constructor arguments and properties
 class Point {
   x: number = 0;
   y: number = 0;

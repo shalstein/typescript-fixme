@@ -1,7 +1,7 @@
 // add the type annotation to explicitly specify the type of the variable:
 var isDone = false;
 var lines = 42;
-var name = "Anders";
+var username = "Anders";
 
 // annotate the type as when it's not known
 let unknownTypeVariable;
@@ -9,11 +9,7 @@ let unknownTypeVariable;
 //annotate this array
 var list = [1, 2, 3];
 
-// implement color in typescript
-var Color = { Red: 0, Green: 1, Blue: 2 };
-var c = Color.Green;
-console.log(Object.keys(Color)[c]); // "Green"
-
+// annotate the return type of this function
 function littleHorribleAlert() {
   alert("I am a little annoying box!!");
 }
@@ -23,7 +19,7 @@ var f1 = function (i) {
 };
 
 //change f4 to accept a string or a number as a parameter
-function f4(i) {
+function f2(i) {
   console.log("The value was " + i);
 }
 

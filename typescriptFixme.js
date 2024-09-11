@@ -26,9 +26,6 @@ var mySearch = function (src, sub) {
 //annotate the constructor arguments and properties
 var Point = /** @class */ (function () {
     function Point(x, y) {
-        if (y === void 0) { y = 0; }
-        this.x = 0;
-        this.y = 0;
         this.x = x;
         this.y = y;
     }
